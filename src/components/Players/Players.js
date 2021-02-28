@@ -10,9 +10,9 @@ const Players = (props) => {
   return (
     <div className="container">
         <div className="row ">
-          <div className="col-md-6 ">
+          <div className="col-md-8 ">
           <div className="card m-3">
-            <img src= {image} className="card-img-top text-center" alt="" />
+            <img src= {image} className="card-img-top w-100" alt="" />
             <div className="card-body">
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">Name: {name} </li>
@@ -21,7 +21,9 @@ const Players = (props) => {
                 <li className="list-group-item">Shirt-Number: {position} </li>
                 <li className="list-group-item">Shirt-Number: {age} </li>
               </ul>
-              <button onClick = {() => handleAddClick(props.player)} className="btn btn-primary"><FontAwesomeIcon icon={faUserPlus} /> Add Now</button>
+              <div className = "text-center">
+              <button  onClick = {() => handleAddClick(props.player)} className="btn btn-danger "><FontAwesomeIcon icon={faUserPlus} /><span className = "text-center"> Add Now</span></button>
+              </div>
             </div>
         </div>
           </div>

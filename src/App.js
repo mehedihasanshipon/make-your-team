@@ -27,11 +27,10 @@ function App() {
             </div>
           <div className = "col-md-3">
             <h4>Player added: {singlePlayers.length}</h4>
-            
             <h4>Total salary: {totalSalary}</h4>
             <h5 className='text-center mt-5'>Player list</h5>
             {
-              singlePlayers.map(singlePlayer => <Team handleAddClick = {handleAddClick} singlePlayer = {singlePlayer} key={singlePlayer.id} /> )
+              singlePlayers.map(singlePlayer => <Team singlePlayer = {singlePlayer} key={singlePlayer.id} /> )
             }
           </div>
       </div>

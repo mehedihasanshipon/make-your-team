@@ -1,5 +1,4 @@
 .card img{
-    height: 200px !important;
-    width: 200px !important;
-    text-align: center !important;
+    height: 300px !important;
+    border-radius: 10%;
 }
