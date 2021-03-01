@@ -1,8 +1,7 @@
 import React from 'react';
 import './Team.css'
 
-const Team = (props) => {
-    console.log(props)      
+const Team = (props) => {     
     const singlePlayer = props.singlePlayer;
     const {name,salary,image} = singlePlayer;
     
@@ -10,8 +9,8 @@ const Team = (props) => {
         <div className="d-flex team-player">
             <img src={image} alt=""/>
             <div className ="team-player-info">
-                <h5> {name} </h5> 
-                <p>Salary: {salary} </p> 
+                <h4 className = "font"> {name} </h4> 
+                <h6 >Salary: <span> {salary}</span> </h6> 
             </div>
         </div>
     );

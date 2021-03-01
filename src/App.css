@@ -1,4 +1,16 @@
-
+.counter{
+  color: #c41431;
+  font-weight: 600;
+}
+.divider{
+  border-right: 1px solid #c41431 !important;
+}
+.count-section{
+  border: 1px solid #c41431;
+  padding: 20px;
+  width: 320px;
+  border-radius: 10px;
+}
 .App-link {
   color: #61dafb;
 }
