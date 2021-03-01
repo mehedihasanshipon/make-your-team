@@ -44,7 +44,6 @@ function App() {
             <div className = "mt-5 count-section">
               <h4>Player added : <span className = "counter">{singlePlayers.length}</span></h4>
               <h4>Total Budget :  <span className = "counter">{totalSalary}</span></h4>
-              
             </div>
             <h5 className='text-center mt-3'>Squad list</h5>
             {
