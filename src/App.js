@@ -17,8 +17,10 @@ function App() {
 
   // Add button function
   const handleAddClick = (player)=> {
-      const newPlayer = [...singlePlayers,player];
-      setSinglePlayer(newPlayer)
+      if(singlePlayers.indexOf(player) === -1){
+        const newPlayer = [...singlePlayers,player];
+        setSinglePlayer(newPlayer)
+      }
   }
   // Total budget count
   const totalSalary = singlePlayers.reduce((sum,player) => sum + player.salary ,0);
